@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basics</title>
+    <style>
+      body {
+        text-align: center;
+      }
+      button {
+        padding: 20px;
+        font-size: 20px;
+        background-color: green;
+      }
+      #Mydiv {
+        background-color: red;
+        padding: 50px;
+        color: white;
+        margin-top: 20px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to the page</h1>
+    <button onclick="Myfunction()">see the message</button>
+    <div id="Mydiv">
+      Your system has been hacked.
+    </div>
+    <script>
+      function Myfunction() {
+        var x = document.getElementById("Mydiv");
+        if (x.style.display == "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
